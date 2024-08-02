@@ -1,0 +1,52 @@
+How to Use the MITRE ATT&CK Data Analysis and Visualization Tool
+
+This tool is designed for extracting, analyzing, and visualizing data related to the Tactics, Techniques, and Procedures (TTPs) of various threat groups as defined in the MITRE ATT&CK framework. Here’s a step-by-step guide on how to use it:
+______________________________________
+Step 1: Running the Script
+Open a command prompt or terminal window.
+
+Navigate to the directory where the script is located.
+
+Execute the script using Python:
+
+python mitre_scrapping_data_retrival.py
+______________________________________
+Step 2: Selecting an APT Group
+Upon running the script, it will initiate the process by fetching the latest tactics and techniques from MITRE and then prompt you to enter the name or associated group of the APT you wish to investigate.
+
+Enter the name or identifier of the APT group you are interested in, and press Enter.
+The script will search for and display the IDs associated with the entered APT group. If no IDs are found, it will prompt you to try again.
+______________________________________
+Step 3: Exploring the Options
+After selecting an APT group, the script will display a menu with several options:
+
+Export Data as CSV
+Create a Heatmap
+Create a Probability Network Map
+Exit
+Choose an option by entering the corresponding number and pressing Enter.
+______________________________________
+Option 1: Export Data as CSV
+If you select this option, you'll be prompted to choose the type of data you want to export:
+
+Associated Names
+APT Techniques
+APT Software
+APT Campaign Info
+All information
+Choose the desired data type, and the script will export it as a CSV file to your Downloads folder.
+______________________________________
+Option 2: Create a Heatmap
+This option generates a heatmap visualizing the frequency of each TTP used by the selected APT group. The script will both display the heatmap and save an image of it in your Downloads folder.
+
+Please note: The heatmap displayed on your screen is a quick representation. For a more detailed and better-formatted image, refer to the heatmap image saved in your Downloads folder.
+______________________________________
+Option 3: Create a Probability Network Map
+For interactive exploration, this option allows you to view a network map showing the probabilities and connections between different TTPs used by the APT group. Follow the prompts to navigate through the network tree.
+______________________________________
+Step 4: Interacting with the Data
+Based on your selection, you can:
+
+CSV Exports: Check your Downloads folder for the exported files.
+Heatmaps: View the heatmap image in your Downloads folder for a better-formatted representation compared to the immediate screen display.
+Probability Network Maps: Interact with the graph to explore the relationships between techniques.
