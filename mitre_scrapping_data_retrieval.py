@@ -244,7 +244,7 @@ software_df = named_dataframes.get("Software")
 
 # Access the DataFrame named "Campaign"
 if len(named_dataframes) > 3:
-    campaigns_df = named_dfataframes.get("Campaigns")
+    campaigns_df = named_dataframes.get("Campaigns")
 else:
     pass
 
